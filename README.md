@@ -1,27 +1,47 @@
-# GraaspAppStarterAngular
+# Graasp App Starter: Angular Framework
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.5.
+This is a starter repository for a Graasp application. This particular flavor of the starter
+repository uses the Angular framework. It is an opinionated starter kit generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.5.
 
-## Development server
+## Getting Started
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Fork this repo.
 
-## Code scaffolding
+## Request Credentials
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Currently, becoming a Graasp Developer and registering Graasp Apps is a manual process. Contact
+juancarlos.farah@epfl.ch or andre.nogueira@epfl.ch to receive a `GRAASP_DEVELOPER_ID`. Every time
+you want to release a new app, you will also have to request a `GRAASP_APP_ID`. This process is
+being automated, but it's currently still in the works.
 
-## Build
+We will also give you AWS credentials, `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY`, which you
+will need to deploy your application to the Graasp ecosystem. These keys are private, so you should
+not share them with anyone.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Environment Variables
 
-## Running unit tests
+Create a file in your project root named `.env` and add the following lines, replacing the values
+between `<>` with the keys you received.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```
+GRAASP_DEVELOPER_ID=<YOUR_GRAASP_DEVELOPER_ID>
+GRAASP_APP_ID=<YOUR_GRAASP_APP_ID>
+AWS_ACCESS_KEY_ID=<YOUR_AWS_ACCESS_KEY_ID>
+AWS_SECRET_ACCESS_KEY=<YOUR_AWS_SECRET_ACCESS_KEY>
+```
 
-## Running end-to-end tests
+## Setup Development Environment
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Once you have set up your `.env` file, you need to run `./scripts/setup.sh` from the root folder in
+order to setup your credentials. This script will write the appropriate credentials to a
+`~/.aws/credentials` file that will allow you to deploy your application to the ecosystem.
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Installing Dependencies
+
+Make sure you have `node` and `yarn` installed on your local machine otherwise go
+[here](https://changelog.com/posts/install-node-js-with-homebrew-on-os-x) and install them; then run `yarn` or `npm install` from the project directory to install all dependencies.
+
+## Starting the Server
+
+Navigate to the cloned or forked project directory using the command line, type `npm start` and the project will automatically run on `localhost:4200`.
