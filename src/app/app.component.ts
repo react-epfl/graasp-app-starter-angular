@@ -19,7 +19,6 @@ export class AppComponent implements OnInit {
       skipWhile(mode => !Boolean(mode))
     ).subscribe(mode => {
       this.mode = mode;
-      console.log(this.mode);
     });
   }
 }
