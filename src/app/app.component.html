@@ -4,9 +4,15 @@
     <img src="../assets/imgs/logo.svg" class="app-logo" alt="Logo" />
     <h1 class="app-title">Welcome to the Graasp App Starter Kit</h1>
   </header>
-  <div class="app-body container">
-    <router-outlet></router-outlet>
+  <div class="app-body container" [ngSwitch]="mode">
+    <ng-container *ngSwitchCase="'teacher'">
+      <app-teacher></app-teacher>
+    </ng-container>
+    <ng-container *ngSwitchCase="'student'">
+      <app-student></app-student>
+    </ng-container>
+    <ng-container *ngSwitchDefault>
+      <app-student></app-student>
+    </ng-container>
   </div>
 </div>
-
-
