@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="93ed5c038927a4d5c69a53476ad52afeeb7a3b38" datatype="html">
+        <source>Welcome to the Graasp App Starter Kit</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="b4609cf8305738e324b149b039cfb7e804c773a7" datatype="html">
+        <source>This is the teacher view. Switch to the student view by clicking on the URL below.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/teacher/teacher.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="fcfbc16b8631277ee0d2522c8ea63d227e2b9c5f" datatype="html">
+        <source>This is the student view. Switch to the teacher view by clicking on the URL below.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/student/student.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
